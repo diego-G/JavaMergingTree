@@ -1,104 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
-
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
+    <meta charset="UTF-8">
     <title>Javamergingtree by diego-G</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
-    <a id="forkme_banner" href="https://github.com/diego-G/JavaMergingTree">View on GitHub</a>
-    <div class="shell">
+    <section class="page-header">
+      <h1 class="project-name">Javamergingtree</h1>
+      <h2 class="project-tagline">Testcase to merge severals</h2>
+      <a href="https://github.com/diego-G/JavaMergingTree" class="btn">View on GitHub</a>
+      <a href="https://github.com/diego-G/JavaMergingTree/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/diego-G/JavaMergingTree/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Javamergingtree</h1>
-            <h2>Testcase to merge severals</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/diego-G/JavaMergingTree/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/diego-G/JavaMergingTree/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <h3>
+    <section class="main-content">
+      <h3>
 <a id="merging-tree-excersice" class="anchor" href="#merging-tree-excersice" aria-hidden="true"><span class="octicon octicon-link"></span></a>Merging tree excersice</h3>
 
-<p>Below, there are two files with data about two trees:</p>
+<p>It seeks to merge two trees and generate a full layout of the resultant tree. Here, there are two sample files with data about two trees. Each line contains data of the paths formed as "path : weight". Each path contains other paths separated by slash or dot.</p>
 
-<ul>
-<li><p>File1 --&gt; slash separated paths
-A/B/C : 1
-A/B : 1
-A1/B1/C : 1</p></li>
-<li><p>File2 --&gt; dot or slash separated paths
-A.C : 1
-A.B : 1
-A.B.D : 3
-A.B.C : 1
-A2/B/C : 4</p></li>
-</ul>
+<p>File1
+    A/B/C : 1
+    A/B : 1
+    A1/B1/C : 1</p>
+
+<p>File2
+    A.C : 1
+    A.B : 1
+    A.B.D : 3
+    A.B.C : 1
+    A2/B/C : 4</p>
 
 <p>Expected result : 
-A : 8
-A/B : 7
-A/B/C : 2
-A/B/D : 3
-A/C : 1
-A1 : 1
-A1/B1 : 1
-A1/B1/C : 1
-A2 : 4
-A2/B : 4 
-A2/B/C : 4</p>
-
-<p>It is needed to merge the two trees and generate a full layout of the tree. </p>
+    A : 8
+    A/B : 7
+    A/B/C : 2
+    A/B/D : 3
+    A/C : 1
+    A1 : 1
+    A1/B1 : 1
+    A1/B1/C : 1
+    A2 : 4
+    A2/B : 4 
+    A2/B/C : 4</p>
 
 <h3>
 <a id="merging-tree-solution" class="anchor" href="#merging-tree-solution" aria-hidden="true"><span class="octicon octicon-link"></span></a>Merging tree solution</h3>
 
-<p>A Java test case is implemented which loads two files, merge the two trees and generate a full description of the tree.</p>
-      </section>
+<p>A Java test case is implemented. It loads two files, merges the two loaded trees and generates a full tree description.</p>
 
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/diego-G">diego-G</a> can be found on <a href="https://github.com/diego-G/JavaMergingTree">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/diego-G/JavaMergingTree">Javamergingtree</a> is maintained by <a href="https://github.com/diego-G">diego-G</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
 
-    </div>
+    </section>
 
-    
+  
   </body>
 </html>
